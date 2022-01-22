@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Barcode</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js" type="module" defer></script>
+</head>
+<body class="app">
+  <h1 class="app__title">Movie Barcode</h1>
+  <video id="video" src="./movies/Y2Mate.is - Spider-Man PS4 All Cutscenes & Ending (Cinematic Scenes LIKE A MOVIE)-xVi15mGZlR4-480p-1642846532169.mp4" controls></video>
+
+  <table border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Manual</th>
+        <th>Automático</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Dimensions</th>
+        <td>854x480</td>
+        <td>
+          <output id="dimensions"></output>
+        </td>
+      </tr>
+      <tr>
+        <th>Duration</th>
+        <td>02:46:38</td>
+        <td>
+          <output id="duration"></output>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
