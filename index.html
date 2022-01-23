@@ -10,7 +10,15 @@
 </head>
 <body class="app">
   <h1 class="app__title">Movie Barcode</h1>
-  <video id="video" src="./movies/Y2Mate.is - Spider-Man PS4 All Cutscenes & Ending (Cinematic Scenes LIKE A MOVIE)-xVi15mGZlR4-480p-1642846532169.mp4" controls></video>
+  <form action="" class="form">
+    <div class="form__row">
+      <div class="form__file">
+        <label for="userVideo" class="form__file-label">Añade tu vídeo</label>
+        <input type="file" name="userVideo" id="userVideo" class="form__file-field js__file-field">
+      </div>
+    </div>
+  </form>
+  <video id="video" controls></video>
 
   <table border="1" cellpadding="10">
     <thead>
