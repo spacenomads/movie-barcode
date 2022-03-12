@@ -1,3 +1,16 @@
 output {
   color: red;
 }
+
+.colors {
+  width: 1280px;
+  height: 640px;
+  display: flex;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.color {
+  width: 2px;
+  flex-shrink: 0;
+}
