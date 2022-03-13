@@ -45,10 +45,26 @@ function playSelectedFile(event) {
 }
 
 
+function getTimestamps(videoDuration, totalFrames) {
+  console.log({videoDuration, totalFrames})
+  const timeJump = videoDuration / totalFrames;
+  let currentTime = 0;
+  const result = [];
+
+  for (let i = 0; i < totalFrames; i++) {
+    currentTime += timeJump;
+    if (currentTime <= videoDuration)
+      result.push(currentTime);
+  }
+  return result;
+}
+
+
 export {
   resizeCanvas,
   getDimensions,
   getDuration,
   playSelectedFile,
   gotoTime,
+  getTimestamps,
 }

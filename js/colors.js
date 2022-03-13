@@ -41,7 +41,6 @@ function getRandomColors(total) {
 
 
 const COLORS = getRandomColors(5000);
-console.log(COLORS);
 
 export {
   paintColors
